@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 
 class SubCompany extends Component {
   render() {
-    return {/* your code here */ }
+    return (
+      <h4>{`Company : ${this.props.name} -  Revenue :${this.props.revenue}`}</h4>
+    )
 
   }
 }

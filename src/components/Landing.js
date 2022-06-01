@@ -5,7 +5,10 @@ class Landing extends Component {
 
 
     render() {
-        return {/* your code here */ }
+        let hottest = this.props.stores.find(store => store.hottest) 
+        return (
+            <div>{`Welcome ${this.props.user}, The hottest item is ${hottest.item} for $${hottest.price}`}</div>
+        )
 
     }
 }

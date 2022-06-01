@@ -4,8 +4,10 @@ class Calendar extends Component {
   render() {
     return (
       <div id="calendar">
-        {/* your code here */}
-
+        <h3>Calendar</h3>
+        {this.props.reservations.map(reservation => <div key = {`${reservation.name}`} >
+          {`${reservation.name} has a reservation on ${reservation.day}  ${reservation.time}`}
+          </div>) }
       </div>
     )
   }
